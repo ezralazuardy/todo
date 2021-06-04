@@ -70,18 +70,18 @@ $todos = $repository->getAllToDos();
           <div class="container px-24 py-24">
                <div class="flex flex-col text-start p-2 w-full mb-2">
                     <h1 class="w-2/3 mx-auto text-3xl font-black title-font mb-4 text-gray-900">To Do List</h1>
-                    <p class="w-2/3 mx-auto leading-relaxed text-base">Tulis daftar To Do kamu disini biar ntar gak kelupaan!</p>
+                    <p class="w-2/3 mx-auto leading-relaxed text-base">Save your To Do List easily!</p>
                </div>
                <div class="w-2/3 mx-auto">
                     <div class="flex flex-wrap">
                          <form action="index.php" method="post" class="p-2 w-full">
-                              <input type="text" id="todo" name="todo" placeholder="Masukkin To Do-nya disini yaa" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4" required>
+                              <input type="text" id="todo" name="todo" placeholder="Write your To Do here" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4" required>
                               <div class="flex flex-row w-full mb-2">
-                                   <button type="submit" class="flex text-white bg-indigo-500 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-md">Simpan</button>
+                                   <button type="submit" class="flex text-white bg-indigo-500 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-md">Add</button>
                          </form>
                          <form action="index.php" method="post">
                               <input type="text" name="truncate" value="true" hidden />
-                              <button type="submit" class="flex ml-2 text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-600 rounded text-md">Hapus Semua</button>
+                              <button type="submit" class="flex ml-2 text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-600 rounded text-md">Remove All</button>
                          </form>
                     </div>
                     <?php foreach ($todos as $todo) : ?>
